@@ -15,7 +15,7 @@ if (navigator.geolocation) {
 
         // Crea un'icona personalizzata
         const motorbikeIcon = L.icon({
-            iconUrl: '../assets/icons/motorbike.png', // URL dell'icona della bici
+            iconUrl: '../media/battery.png', // URL dell'icona della bici
             iconSize: [30, 30], // Dimensione dell'icona
             iconAnchor: [19, 38], // Punto dove l'icona "punta" sulla mappa
             popupAnchor: [0, -38] // Dove si apre il popup rispetto all'icona
@@ -28,16 +28,16 @@ if (navigator.geolocation) {
 
         // Aggiungi un marker con l'icona della bici
         L.marker([45.5463, 11.5478], { icon: motorbikeIcon }).addTo(mappa)
-        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5463, 11.5478)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>PRENOTA</button></a>`);
+        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5463, 11.5478)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>INDICAZIONI</button></a>`);
  
         L.marker([45.5490, 11.5420], { icon: motorbikeIcon }).addTo(mappa)
-        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5490, 11.5420)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>PRENOTA</button></a>`);
+        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5490, 11.5420)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>INDICAZIONI</button></a>`);
                 
         L.marker([45.5390, 11.5500], { icon: motorbikeIcon }).addTo(mappa)
-        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5390, 11.5500)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>PRENOTA</button></a>`);
+        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5390, 11.5500)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>INDICAZIONI</button></a>`);
                 
         L.marker([45.5340, 11.5600], { icon: motorbikeIcon }).addTo(mappa)
-        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5340, 11.5600)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>PRENOTA</button></a>`);
+        .bindPopup(`<a href="#book-container"><button onclick='showMapsLink(45.5340, 11.5600)' type='button' id='book-btn-pop-up' class='btn btn-primary btn-lg'>INDICAZIONI</button></a>`);
                 
     }, (error) => {
         console.error("Impossibile ottenere la posizione:", error.message);

@@ -206,7 +206,7 @@ footer{
 #central-icon{
     position: absolute;
     z-index: 1;
-    margin-top: -40px;
+    margin-top: -50px;
     background-color: var(--sec-green);
     height: 120px;
     width: 120px;
