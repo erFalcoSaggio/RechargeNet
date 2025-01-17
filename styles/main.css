@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'joan', serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: larger;
     display: flex;
     flex-direction: column;
@@ -39,18 +39,17 @@ h1 {
 }
 
 #title-label {
-    font-size: 11vh;
+    font-size: 10vh;
     word-wrap: break-word;
     color: var(--main-gray);
     text-align: center;
 }
 
 #title-label-1 {
-    font-size: 10vh;
+    font-size: 12vh;
     font-style: italic;
     color: var(--main-green);
     text-align: center;
-    margin-top: -3vh;
 }
 
 #start-btn {
