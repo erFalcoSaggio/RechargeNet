@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login- Askoll GO</title>
+    <!-- Joan Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link id="style" rel="stylesheet" href="../styles/login-default.css">
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/sign.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title-header">Askoll <span id="go">GO</span></h1>  
+    </header>
+    
+    <form id="logIn">
+        <h1>Sign In</h1>
+        <label for="email">Inserire la prorpia email</label>
+        <input type="email" id="email" placeholder="Inserire email" required>
+        <label for="password">Inserire password</label>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button onclick="signIn()">Sign In</button>
+    </form>
+
+    <p>Non hai un account? <a href="../docs/signup.html">Registrati</a></p>
+
+    <footer>
+        <button onclick="changeColor()" class="icon-container"> <img src="../img/solar--moon-linear.svg" class="icons"> </button>
+        <button class="icon-container" id="central-icon"><a href="homepage.html"><img src="../img/mynaui--home.svg" class="icons" ></a>  </button>
+        <button class="icon-container"> <a href="../docs/login.html"><img src="../img/charm--person.svg" class="icons"></a></button>
+    </footer>
+</body>
+</html>

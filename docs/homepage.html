@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, orientation=portrait">
+    <title>Mappa Leaflet</title>
+    <!-- bootstrap uploading -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Joan Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <!-- Importa Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Importa Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- script main -->
+    <script src="../scripts/map.js"></script>
+    <!-- script carousel -->
+    <script src="../scripts/carousel.js"></script>
+    <!-- stile carousel -->
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <!-- Stile css -->
+    <link id="style" rel="stylesheet" href="../styles/homepage-default.css"><!--cdcdcdcd -->
+    <!-- css animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="../scripts/main.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <h1 id="title-header">Askoll <span id="go">GO</span></h1>  
+  </header>
+
+  <h2 id="selezionaMezzo">Seleziona il mezzo</h2>
+
+  <!-- carousel -->
+    <div id="carousel-container">
+        <div id="swipe-cards-container">
+            <div class="card" id="1">
+                <img src="../img/bici.png">
+            </div>
+            <div class="card" id="2">
+                <img src="../img/monopattin.png" alt="">
+            </div>
+            <div class="card" id="3">
+                <img src="../img/scooter.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Div dove verrà visualizzata la mappa -->
+
+    <h2 id="mappaH2">Mappa</h2>
+    
+        <div id="mappa"></div>
+    
+
+    <!-- book container -->
+    <div id="book-container">
+      <a id="google-maps-link-btn"><img id="google-maps-link" src="../assets/icons/google maps.png" alt="icona google maps"></a>
+    </div>
+
+    <footer>
+        <button onclick="changeColor()" class="icon-container"> <img src="../img/solar--moon-linear.svg" class="icons"> </button>
+        <button class="icon-container" id="central-icon"><a href="../docs/homepage.html"><img src="../img/mynaui--home.svg" class="icons" ></a>  </button>
+        <button class="icon-container"> <a href="../docs/login.html"><img src="../img/charm--person.svg" class="icons"></a></button>
+    </footer>
+
+</body>
+</html>

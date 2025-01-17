@@ -1,0 +1,216 @@
+:root {
+    --main-green: #A5D449;
+    --sec-green: #454545; 
+    --main-gray: #fff; 
+    --white: #66666A; 
+  }
+
+body {
+    font-family: 'joan', serif;
+    font-size: larger;
+    margin-bottom: 0;
+    height: 105vh;
+    background-color: var(--white);
+}
+
+#title-header {
+    font-weight: normal;
+    color: var(--main-gray);
+    font-size: 45px;
+}
+
+#selezionaMezzo {
+    font-weight: normal;
+    color: var(--main-gray);
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+#mappaH2 {
+    font-weight: normal;
+    color: var(--main-gray);
+    font-size: 30px;
+    margin-left: 6%;
+}
+
+
+#go {
+    color: var(--main-green);
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+    height: 13vh;
+    margin: 0;
+    font-size: 2.2vh;
+    border: 1px solid var(--sec-green);
+    border-radius: 0px 0px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--sec-green);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+
+/* Definisci uno stile per il div della mappa */
+#mappa {
+    height: 30vh; /* Altezza della mappa */
+    width: auto; /* Larghezza della mappa */
+    border-radius: 30px;
+    border: 5px solid var(--sec-green);
+    border-right: 3px solid var(--sec-green);
+    border-left: 3px solid var(--sec-green);
+    border-bottom: 5px solid var(--sec-green);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* Quando lo schermo è in modalità landscape */
+@media (orientation: landscape) {
+    #mappa {
+        height: 95vh; /* Mantieni l'altezza normale per landscape */
+        width: 30vw;  /* Assicura che la larghezza occupi tutto lo schermo */
+    }
+}
+
+/* Aggiungi ombra all'icona */
+.leaflet-marker-icon {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1)); /* Ombra dell'icona */
+}
+
+/* Stili per il pop-up */
+#book-btn-pop-up {
+    padding: 2vh;
+    width: 40vw;
+    font-size: larger;
+    color: var(--main-gray);
+    background-color: var(--main-green);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    transition: 0.3s all ease-in-out;
+}
+
+#book-btn-pop-up:active {
+    color: var(--main-green);
+    background-color: var(--main-gray);
+    transform: scale(0.95);
+}
+
+#book-btn-pop-up-booked {
+    padding: 2vh;
+    width: 40vw;
+    font-size: larger;
+    color: var(--main-green);
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--main-gray);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* book div */
+#book-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#google-maps-link-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#google-maps-link {
+    width: 25vw;
+    height: 25vw;
+    margin-top: 10%;
+    margin-bottom: 180%;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));    
+    transition: 0.1s all ease-in-out;
+}
+
+#google-maps-link:active {
+    transform: scale(1.2);
+}
+
+#mappa-container {
+    width: 100%;
+}
+
+#carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 80%;
+    height: 17%;
+    margin: auto;
+    margin-bottom: 45px;
+    margin-top: 4%;
+    border-radius: 15px;
+}
+
+#swipe-cards-container {
+    border-radius: 15px;
+    padding: 0px;
+    height: 100%;
+    background-color: var(--sec-green);
+}
+
+#card {
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 10.5%;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    margin-top: 15%;
+    justify-content: space-evenly;
+    align-items: centers;
+    height: 12vh;
+    background-color: var(--sec-green);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+}
+
+.icon-container{
+    width: 50%;
+    border-radius: 50px;
+    background-color: var(--sec-green);
+    border: var(--sec-green);
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+}
+
+#central-icon{
+    position: absolute;
+    z-index: 1;
+    margin-top: -40px;
+    background-color: #343434;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
